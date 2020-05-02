@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chatter|App</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body onload="init()">
+    <section id="channel-area">
+        <div class="headbar">
+            <img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="logo" id="logo">
+            <h1 id="app-title">chatter | app</h1>
+        </div>
+
+        <a id="fab" class="button">+</a>
+        <div id="channel-list-area">
+            <h2>Favorites</h2>
+            <ul class="channel-list" id="favorite-channels"></ul>
+            <h2>Regular</h2>
+            <ul class="channel-list" id="regular-channels"></ul>
+        </div>
+    </section>
+
+    <section id="message-area">
+        <div class="headbar" id="message-area-header">
+            <h1></h1>
+            <a id="favorite-button" class="material-icons button"></a>
+        </div>
+        <div id="chat-area">
+            <p id="select-channel">Select a channel to start messaging.</p>
+        </div>
+        <div id="input-area">
+            <a class="material-icons button" id="emoticon-button">insert_emoticon</a>
+            <input type="text" id="message-input" name="message-input" minlength="1" maxlength="500" placeholder="... write your message">
+            <a class="material-icons button" id="send-button">send</a>
+        </div>
+        <div id="emoji-area">
+            <div id="emoji-header">
+                <span>Emojis</span>
+                <a class="material-icons button" id="close-emoticon-button">cancel</a>
+            </div>
+            <div id="emoji-list"></div>
+        </div>
+    </section>
+</body>
+<script src="js/messages.js"></script>
+<script src="js/channels.js"></script>
+<script src="js/main.js"></script>
+<script src="js/emojis.js"></script>
+
+</html>

@@ -1,0 +1,4 @@
+- object structure anlegen für messages und channels
+- array anlegen 
+- loop durch messages um Nachrichten darzustellen
+- neue Nachricht mit Constructur function in array pushen
